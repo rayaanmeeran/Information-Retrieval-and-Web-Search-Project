@@ -543,7 +543,6 @@
 98:1
 99:2
 9n:1
-a:1808
 a1:24
 a2:1
 a418:1
@@ -631,8 +630,6 @@ abd:1
 abilities:2
 ability:26
 able:16
-about:65
-above:23
 abrahams:1
 abscissas:3
 absence:7
@@ -679,7 +676,6 @@ accomplishing:6
 accomplishments:1
 accordance:5
 according:20
-accordingly:2
 account:20
 accountability:1
 accounting:6
@@ -714,7 +710,6 @@ acquires:1
 acquis:1
 acquisition:2
 acronym:1
-across:4
 act:1
 acting:1
 action:13
@@ -814,9 +809,6 @@ affirmative:2
 affix:1
 afford:1
 affords:1
-after:33
-again:4
-against:16
 age:1
 agement:1
 agencies:4
@@ -878,7 +870,6 @@ alien:1
 aligning:1
 alignment:2
 alike:1
-all:186
 alleged:1
 allegedly:1
 alleviate:2
@@ -894,11 +885,7 @@ allow:41
 allowable:4
 allowed:11
 allowing:15
-allows:71
-almost:19
 alocation:1
-alone:6
-along:25
 aloof:1
 alpak:1
 alpha:3
@@ -909,8 +896,6 @@ alphabets:2
 alphameric:2
 alphanumeric:8
 alphard:1
-already:16
-also:232
 alter:2
 alteration:2
 alterations:3
@@ -922,10 +907,8 @@ alternative:39
 alternatively:1
 alternatives:11
 althm:1
-although:55
 altogether:1
 altran:1
-always:19
 ambiguities:9
 ambiguity:9
 ambiguous:6
@@ -937,7 +920,6 @@ amendment:1
 american:41
 amesplot:1
 ammunition:1
-among:47
 amount:45
 amounts:6
 amphisbaenic:1
@@ -945,7 +927,6 @@ amplified:1
 amplitude:1
 amplitudes:1
 amps:1
-an:893
 analog:5
 analogies:2
 analogous:6
@@ -969,7 +950,6 @@ anatomy:2
 ancestor:3
 ancient:1
 ancients:1
-and:1562
 andries:1
 anew:1
 angeles:1
@@ -990,7 +970,6 @@ annual:1
 anomalies:2
 anomalous:3
 anomaly:5
-another:55
 anpak:1
 ans:2
 ansi:1
@@ -1003,12 +982,7 @@ anticipate:1
 anticipated:4
 anticipatory:1
 antilogy:1
-any:179
-anyone:4
-anything:2
-anywhere:3
 aparel:1
-apart:4
 aperture:1
 apertures:1
 apl:2
@@ -1016,7 +990,6 @@ apld:1
 apparent:4
 apparently:2
 appealing:1
-appear:14
 appearance:2
 appearances:1
 appeared:2
@@ -1046,7 +1019,6 @@ approach:110
 approached:1
 approaches:24
 approaching:2
-appropriate:36
 appropriately:3
 appropriateness:3
 approximants:2
@@ -1078,7 +1050,6 @@ arctangent:1
 arctangents:1
 ard:3
 ardizationof:1
-are:1028
 area:41
 areas:30
 areext:1
@@ -1099,7 +1070,6 @@ armament:1
 armies:1
 army:1
 arose:1
-around:8
 arpa:5
 arpanet:1
 arrange:2
@@ -1127,7 +1097,6 @@ artificially:1
 artistic:1
 arts:1
 ary:4
-as:623
 asa:8
 ascending:3
 ascertain:2
@@ -1135,7 +1104,6 @@ ascertained:1
 ascertaining:2
 ascii:8
 ashenhurst:2
-aside:1
 ask:1
 asked:2
 asks:1
@@ -1172,7 +1140,6 @@ assisted:5
 assisting:1
 assoc:1
 associate:5
-associated:59
 associates:4
 associating:3
 association:8
@@ -1194,7 +1161,6 @@ asymmetric:3
 asymptotic:6
 asymptotically:8
 asynchronous:7
-at:294
 ative:2
 atlas:6
 atmospheres:1
@@ -1255,7 +1221,6 @@ automata:8
 automate:7
 automated:18
 automatic:110
-automatically:36
 automating:5
 automation:8
 automaton:2
@@ -1267,7 +1232,6 @@ autonomously:1
 autosate:1
 auxiliary:16
 availability:10
-available:86
 avenue:1
 avenues:3
 average:44
@@ -1285,7 +1249,6 @@ await:1
 awakening:1
 aware:1
 awareness:2
-away:4
 ax:2
 axes:3
 axial:1
@@ -1297,7 +1260,6 @@ axioms:7
 axis:3
 axle:1
 ay1:1
-b:24
 b1:4
 b2:1
 b205:1
@@ -1366,19 +1328,11 @@ bbn:2
 bc:1
 bcd:5
 bdl:1
-be:755
 beale:1
 bear:1
 bearing:3
 beats:1
-became:2
-because:54
-become:19
-becomes:18
-becoming:2
 bedford:1
-been:284
-before:33
 begin:2
 beginner:2
 beginning:8
@@ -1388,9 +1342,7 @@ begun:2
 behaves:1
 behavior:40
 behavioral:2
-behind:5
 bei:3
-being:64
 beings:1
 bel:1
 belady:1
@@ -1404,7 +1356,6 @@ bellman:3
 belong:1
 belonging:1
 belongs:3
-below:7
 belzer:1
 bench:1
 benchmark:1
@@ -1419,14 +1370,9 @@ berkeley:3
 bernard:2
 bernstein:2
 beset:2
-besides:2
 bessel:19
-best:51
 bestowed:1
 beta:7
-better:32
-between:187
-beyond:8
 bezout:1
 bi:1
 bias:2
@@ -1503,7 +1449,6 @@ bordering:1
 borrowed:1
 bosak:1
 boston:1
-both:168
 bottleneck:1
 bottlenecks:1
 bottom:8
@@ -1536,7 +1481,6 @@ breaking:1
 breaks:1
 breakthroughs:1
 brent:1
-brief:23
 briefly:35
 brinch:2
 bring:4
@@ -1596,12 +1540,10 @@ business:25
 businesses:1
 businessman:1
 busy:1
-but:151
 butcher:1
 buttons:1
 buy:2
 bx:2
-by:782
 byan:1
 bypass:1
 bypassed:1
@@ -1609,7 +1551,6 @@ bypassing:1
 byproduct:1
 byte:4
 bytes:4
-c:26
 c1:6
 c191:1
 c2:9
@@ -1661,10 +1602,8 @@ camera:1
 campaign:1
 campus:2
 cams:1
-can:423
 cancel:1
 candidates:4
-cannot:23
 canonical:7
 capabilities:37
 capability:23
@@ -1723,9 +1662,7 @@ cathode:6
 catmull:1
 cauchy:2
 caught:1
-cause:10
 caused:9
-causes:4
 causing:3
 cccs:1
 ccd:1
@@ -1747,7 +1684,6 @@ centralization:1
 centralized:1
 centroid:1
 cep:2
-certain:140
 certainly:2
 certification:10
 cf:1
@@ -1769,7 +1705,6 @@ chance:2
 change:19
 changeable:1
 changed:8
-changes:41
 changing:13
 channel:4
 channels:6
@@ -1931,7 +1866,6 @@ clustered:1
 clustering:9
 clusters:3
 cluttered:1
-co:2
 coastlines:1
 coaxial:1
 cobol:34
@@ -2228,7 +2162,6 @@ consecutive:8
 consecutively:1
 consequence:5
 consequences:5
-consequently:6
 conserves:1
 consider:15
 considerable:16
@@ -2281,11 +2214,8 @@ consummation:1
 consumption:1
 contactless:1
 contacts:2
-contain:16
 contained:17
 container:1
-containing:33
-contains:24
 contemplated:1
 contemporary:5
 contended:1
@@ -2420,7 +2350,6 @@ correlations:2
 correspond:5
 correspondence:8
 correspondences:2
-corresponding:36
 correspondingly:2
 corresponds:10
 corrigenda:2
@@ -2436,7 +2365,6 @@ costly:5
 costs:27
 cotes:1
 couched:1
-could:29
 coulomb:8
 council:2
 count:9
@@ -2530,8 +2458,6 @@ cupl:1
 curbed:1
 cure:1
 cures:1
-current:47
-currently:20
 curricula:6
 curricular:2
 curriculum:18
@@ -2564,7 +2490,6 @@ cylindrical:3
 cypher:1
 cyphers:1
 czechoslovakia:1
-d:33
 d1:34
 d2:5
 d3:2
@@ -2772,7 +2697,6 @@ descendents:1
 descending:4
 descent:2
 describe:35
-described:399
 describes:91
 describing:22
 description:77
@@ -2867,14 +2791,12 @@ dictates:2
 dictionaries:3
 dictionary:8
 dictum:1
-did:2
 diego:2
 dietary:1
 dieter:3
 differ:6
 difference:23
 differences:24
-different:92
 differential:48
 differentiate:2
 differentiation:15
@@ -3015,7 +2937,6 @@ divisionless:2
 divisions:1
 divisor:11
 divisors:5
-do:60
 dobbs:1
 doctoral:2
 doctorate:1
@@ -3026,8 +2947,6 @@ documentation:19
 documented:2
 documenting:1
 documents:11
-does:49
-doing:6
 domain:3
 domains:9
 dominance:1
@@ -3039,7 +2958,6 @@ domino:1
 dominoes:1
 don:1
 donated:1
-done:22
 dot:4
 dots:1
 double:10
@@ -3049,7 +2967,6 @@ doubt:1
 doubtless:1
 doubts:1
 douglas:1
-down:21
 downhill:2
 dozen:3
 dpl:1
@@ -3094,18 +3011,15 @@ duplicate:1
 duplicated:1
 duration:2
 durations:1
-during:60
 dutch:1
 dwelling:1
 dx:1
 dynamic:57
 dynamically:9
 dynamics:4
-e:67
 e1:5
 e2:18
 e4:14
-each:202
 earley:1
 earlier:20
 earliest:2
@@ -3180,10 +3094,8 @@ eigenvalue:6
 eigenvalues:21
 eigenvector:1
 eigenvectors:12
-eight:7
 eighth:1
 eighty:1
-either:50
 el1:1
 elaborate:6
 elaborates:1
@@ -3228,8 +3140,6 @@ ellipsis:1
 ellipsoid:1
 elliptic:17
 ellipticboundary:1
-else:9
-elsewhere:4
 elucidated:1
 elucidation:1
 elusive:1
@@ -3328,7 +3238,6 @@ enlargement:1
 enlist:1
 enormous:6
 enormously:1
-enough:17
 enrichment:1
 ensemble:1
 ensure:5
@@ -3411,8 +3320,6 @@ estimates:23
 estimating:10
 estimation:12
 estimators:1
-et:3
-etc:24
 etching:1
 ether:1
 ethernet:1
@@ -3431,7 +3338,6 @@ evaluation:84
 evaluations:4
 evaluator:1
 evans:1
-even:46
 evening:1
 evenly:1
 event:27
@@ -3440,8 +3346,6 @@ eventcounts:1
 events:21
 eventual:2
 eventually:2
-ever:5
-every:25
 everyman:1
 evidence:19
 evidenced:1
@@ -3461,7 +3365,6 @@ examine:5
 examined:49
 examines:11
 examining:2
-example:93
 examples:110
 examplesare:1
 exaples:1
@@ -3472,7 +3375,6 @@ exceedingly:2
 exceeds:5
 excellence:1
 excellent:5
-except:14
 exception:4
 exceptional:1
 exceptionally:1
@@ -3618,7 +3520,6 @@ extreme:2
 extremely:10
 eye:1
 eyes:1
-f:25
 f1:14
 f2:11
 f3:4
@@ -3666,7 +3567,6 @@ families:4
 family:17
 famous:1
 fap:3
-far:17
 faseb:1
 fashion:7
 fashionable:1
@@ -3703,7 +3603,6 @@ ferrite:2
 fetch:3
 fetches:3
 fetching:1
-few:33
 fewer:11
 fewest:2
 fi:1
@@ -3719,9 +3618,7 @@ fifteen:3
 fifty:1
 figure:6
 figures:2
-file:96
 filed:2
-files:47
 filial:1
 filing:2
 fill:2
@@ -3750,7 +3647,6 @@ finiteness:2
 fire:1
 firing:1
 firm:1
-first:135
 fischer:1
 fisher:2
 fishman:2
@@ -3759,7 +3655,6 @@ fit:32
 fits:3
 fitted:1
 fitting:30
-five:36
 fives:1
 fix:1
 fixed:53
@@ -3800,14 +3695,11 @@ fold:3
 folding:1
 folds:1
 follow:4
-followed:12
-following:31
 follows:3
 font:1
 fonts:1
 food:1
 footing:1
-for:1508
 forbidden:1
 force:7
 forced:2
@@ -3844,8 +3736,6 @@ formats:6
 formatted:4
 formatting:3
 formed:9
-former:5
-formerly:1
 formidable:1
 forming:4
 forms:23
@@ -3857,7 +3747,6 @@ formulated:14
 formulating:3
 formulation:14
 formulations:5
-forth:1
 fortran:122
 fortune:1
 forward:13
@@ -3869,7 +3758,6 @@ foundation:5
 foundations:3
 founded:3
 founding:1
-four:51
 fourier:27
 fourth:12
 fourths:1
@@ -3899,7 +3787,6 @@ frequently:30
 fresnel:8
 friend:1
 frobenius:1
-from:404
 front:3
 fruitful:1
 fruitless:1
@@ -3925,13 +3812,10 @@ funtion:1
 furnished:1
 furnishes:3
 furniture:1
-further:59
 furthered:1
-furthermore:10
 future:46
 futures:1
 fx:1
-g:34
 g1:4
 g2:3
 g21:1
@@ -4006,17 +3890,13 @@ geometry:3
 george:3
 germ:1
 germany:1
-get:7
-gets:1
 getting:3
 gier:1
 gill:1
 gilman:1
 git:1
 give:35
-given:359
 givens:2
-gives:25
 giving:10
 gjr:1
 glance:1
@@ -4027,7 +3907,6 @@ glossary:7
 gluss:1
 glut:2
 glypnir:1
-go:13
 goal:12
 goals:10
 goes:2
@@ -4044,7 +3923,6 @@ gopt:1
 gordan:1
 gordon:1
 gorn:1
-got:1
 gotlieb:5
 goto:2
 governed:1
@@ -4139,10 +4017,8 @@ guns:1
 gutenmacher:1
 gws:1
 gx:1
-h:52
 h1:1
 habermann:1
-had:21
 hadamard:1
 hadian:1
 half:28
@@ -4172,7 +4048,6 @@ happens:1
 happy:1
 hard:4
 hardcopy:1
-hardly:1
 hardware:66
 harmful:2
 harmonic:3
@@ -4182,7 +4057,6 @@ hartley:1
 hartly:1
 harvard:6
 harvey:1
-has:308
 hasbeen:1
 hasen:1
 hash:18
@@ -4190,13 +4064,10 @@ hashed:2
 hashing:10
 hasp:1
 hasto:1
-have:243
 havie:5
-having:29
 havingpartial:1
 hazards:1
 hb:1
-he:19
 head:10
 header:1
 heading:2
@@ -4223,10 +4094,7 @@ help:13
 helpful:4
 helps:2
 hematology:1
-hence:11
 herculean:1
-here:61
-herein:3
 heretofore:1
 hermite:4
 hermitian:1
@@ -4254,12 +4122,9 @@ highly:31
 hilbert:5
 hill:2
 hills:1
-him:10
-himself:3
 hindered:1
 hints:1
 hirschberg:3
-his:42
 historical:6
 histories:1
 history:20
@@ -4303,8 +4168,6 @@ hours:3
 house:1
 householder:1
 households:1
-how:93
-however:64
 hsueh:1
 hu:2
 huffman:2
@@ -4340,7 +4203,6 @@ hypotheses:3
 hypothesis:7
 hypothesized:3
 hypothetical:7
-i:127
 i5:2
 ia:1
 ibftc:1
@@ -4366,12 +4228,10 @@ identify:11
 identifying:8
 identity:1
 idle:2
-if:104
 ifac:1
 ifip:3
 ignorance:1
 ignore:1
-ignored:2
 ii:50
 iii:14
 iin:1
@@ -4403,7 +4263,6 @@ imbalances:1
 imbeded:3
 imbeding:2
 imitate:1
-immediate:15
 immediately:3
 immunology:1
 imol:1
@@ -4452,7 +4311,6 @@ improvements:20
 improves:5
 improving:17
 impulses:1
-in:1425
 inability:6
 inaccuracy:2
 inaccurate:2
@@ -4461,8 +4319,6 @@ inadequacies:5
 inadequacy:1
 inadequate:5
 inappropriate:1
-inasmuch:2
-inc:3
 incentive:1
 incentives:1
 inception:2
@@ -4501,7 +4357,6 @@ incrementally:1
 increments:2
 incur:1
 incurred:1
-indeed:5
 indefinite:2
 indefinitely:2
 indentation:1
@@ -4513,9 +4368,6 @@ indexed:6
 indexes:6
 indexing:15
 indian:1
-indicate:31
-indicated:22
-indicates:12
 indicating:6
 indication:8
 indications:1
@@ -4582,7 +4434,6 @@ initiate:2
 initiated:4
 initiation:1
 inline:1
-inner:5
 innermost:1
 innovation:2
 innovations:3
@@ -4620,7 +4471,6 @@ instant:1
 instantaneous:3
 instantly:1
 instants:2
-instead:17
 institute:6
 institution:3
 institutional:2
@@ -4754,7 +4604,6 @@ interview:1
 interviews:1
 intimate:2
 intimately:1
-into:199
 intra:1
 intractable:3
 intricacies:2
@@ -4832,7 +4681,6 @@ irreducible:2
 irregular:1
 irregularities:1
 irrelevant:2
-is:1393
 isa:1
 isam:1
 ising:1
@@ -4856,7 +4704,6 @@ issue:6
 issued:1
 issues:22
 istituto:1
-it:506
 item:15
 items:34
 iterated:1
@@ -4867,13 +4714,10 @@ iterations:6
 iterative:28
 ith:3
 ition:1
-its:240
-itself:37
 iv:27
 ivan:1
 ivtran:1
 iying:1
-j:15
 j6:7
 jacm:2
 jacobi:10
@@ -4916,13 +4760,11 @@ jump:3
 jumps:2
 june:1
 jungle:1
-just:9
 justification:7
 justified:7
 justifies:1
 justify:3
 justifying:1
-k:27
 k0:1
 k1:2
 k2:4
@@ -4932,14 +4774,12 @@ kantorovich:1
 karyotyping:1
 kc:1
 keating:1
-keep:6
 keepers:1
 keeping:6
 keeps:4
 kellerman:1
 kendrick:1
 keplerian:1
-kept:8
 kernel:5
 kernels:3
 key:49
@@ -4987,7 +4827,6 @@ kuhn:1
 kuno:2
 kutta:12
 kyoto:1
-l:15
 l1:4
 l2:1
 l6:1
@@ -5023,13 +4862,11 @@ largely:8
 larger:23
 largest:6
 lasker:1
-last:14
 late:2
 latency:4
 later:12
 latest:2
 latitude:1
-latter:12
 lattice:4
 lattices:3
 law:8
@@ -5058,7 +4895,6 @@ learning:10
 learns:1
 leased:1
 leasors:1
-least:64
 leave:1
 leaves:6
 leaving:2
@@ -5080,7 +4916,6 @@ lemniscate:2
 lends:1
 length:61
 lengths:16
-less:52
 lesson:1
 lessons:2
 let:3
@@ -5120,7 +4955,6 @@ light:13
 lighting:1
 lightly:1
 lightpen:1
-like:40
 likelihood:1
 likely:7
 likewise:1
@@ -5165,7 +4999,6 @@ lists:35
 literal:1
 literary:1
 literature:24
-little:27
 litton:1
 live:3
 lively:2
@@ -5247,7 +5080,6 @@ lum:1
 lunar:1
 ly:1
 lying:2
-m:36
 m1:14
 m2:1
 m44:1
@@ -5317,14 +5149,12 @@ manipulator:2
 manipulators:1
 manner:32
 manove:1
-manual:12
 manually:4
 manufacture:1
 manufacturer:2
 manufacturers:3
 manufacturing:4
 manuscripts:2
-many:148
 map:18
 mapped:5
 mapping:9
@@ -5391,7 +5221,6 @@ maximize:6
 maximizes:1
 maximizing:2
 maximum:21
-may:198
 maybe:1
 maze:1
 mc:1
@@ -5509,7 +5338,6 @@ microstorage:1
 mid:2
 midpoint:1
 midway:1
-might:16
 migration:1
 milano:1
 mild:1
@@ -5636,16 +5464,12 @@ moore:4
 moorer:1
 moral:1
 moratorium:1
-more:206
-moreover:12
 morris:3
 mortem:3
 moscow:2
 moses:1
 mossbauer:1
-most:133
 mostfind:1
-mostly:3
 motion:9
 motions:3
 motivated:3
@@ -5676,7 +5500,6 @@ mtpt:1
 mts:1
 mu:1
 mu5:1
-much:59
 muchhigher:1
 mudd:1
 muller:2
@@ -5744,21 +5567,16 @@ muse:1
 music:5
 musical:2
 musicians:1
-must:87
 mutual:12
 mutually:5
 mux:1
-my:1
 mysterious:1
 mythical:1
-n:126
 n2:3
 nagging:1
 nagler:1
-name:15
 named:2
 namelist:1
-namely:7
 names:9
 naming:3
 narrow:3
@@ -5780,7 +5598,6 @@ navigator:1
 navy:3
 nbs:1
 nd:1
-near:19
 nearby:2
 nearest:2
 nearly:16
@@ -5789,7 +5606,6 @@ neater2:1
 nebraska:1
 nebula:1
 necessarily:13
-necessary:69
 necessitated:1
 necessitating:2
 necessity:7
@@ -5809,7 +5625,6 @@ neighborhoods:1
 neighboring:1
 neighbors:2
 neil:1
-neither:11
 neliac:4
 nelliac:1
 nelson:1
@@ -5832,9 +5647,6 @@ neuron:1
 neurons:2
 neurophysiological:1
 neurophysiology:1
-never:10
-nevertheless:6
-new:216
 newbasic:1
 newcomb:1
 newell:2
@@ -5844,13 +5656,10 @@ news:2
 newton:23
 newtonian:1
 nexcom:2
-next:27
 nicely:1
 nimerical:1
-nine:4
 nlogn:1
 nmcsa:1
-no:85
 noam:1
 node:19
 nodes:29
@@ -5876,7 +5685,6 @@ nondial:1
 nondirected:3
 nondiscrete:1
 nondramatic:1
-none:10
 nonexistence:2
 nonflowchart:1
 nonhomogeneous:1
@@ -5933,7 +5741,6 @@ nonuniform:2
 nonuniformity:1
 nonuniformly:1
 nonzero:1
-nor:7
 norc:1
 nordsieck:1
 norm:7
@@ -5941,13 +5748,11 @@ normal:52
 normality:2
 normalization:4
 normalized:6
-normally:16
 normative:1
 normdev:1
 normdey:1
 norms:2
 north:3
-not:251
 notable:2
 notably:3
 notation:34
@@ -5963,9 +5768,7 @@ notices:1
 notion:12
 notions:9
 nov:2
-novel:9
 november:4
-now:23
 np:4
 npl:1
 nr:1
@@ -5994,7 +5797,6 @@ nurtured:1
 nuys:1
 nystrom:1
 nyu:1
-o:51
 obey:1
 obeyed:1
 objct:1
@@ -6042,9 +5844,7 @@ octal:3
 odd:2
 oedipus:1
 oettinger:1
-of:2061
 of:1
-off:27
 offer:7
 offered:14
 offerings:1
@@ -6056,10 +5856,7 @@ offs:1
 offset:1
 offspring:1
 ofnatural:1
-often:52
-oh:1
 ol:1
-old:8
 older:1
 olutely:1
 omaha:1
@@ -6067,16 +5864,10 @@ omissions:1
 omits:1
 omitted:1
 omitting:1
-on:891
 ona:1
-once:16
-one:302
-ones:20
 ongoing:3
 online:19
-only:154
 onstochastic:1
-onto:5
 onward:1
 op:2
 opak:1
@@ -6119,7 +5910,6 @@ option:2
 optional:3
 optionally:1
 options:5
-or:352
 oracle:2
 orbit:1
 orbital:1
@@ -6164,16 +5954,10 @@ osiris:1
 ostrowski:1
 ota:1
 otb:1
-other:222
-others:18
-otherwise:9
 oti:1
 otr:1
 ou:1
-ought:1
 ouput:1
-our:19
-out:72
 outchannel:1
 outcome:1
 outcomes:1
@@ -6191,14 +5975,11 @@ outputs:4
 outputting:2
 outreal:2
 outset:2
-outside:7
 outstanding:1
 outsymbol:1
 outward:1
 outweigh:1
-over:113
 overa:1
-overall:22
 overcharges:1
 overcome:10
 overcomes:2
@@ -6228,9 +6009,7 @@ overview:5
 overwhelming:1
 owes:1
 owicki:1
-own:19
 owners:1
-p:22
 p1:1
 pace:2
 pack:1
@@ -6302,8 +6081,6 @@ participating:3
 participation:5
 particle:1
 particles:3
-particular:110
-particularly:33
 particulars:1
 parties:1
 partition:14
@@ -6383,7 +6160,6 @@ pentadiagonal:1
 pentomino:1
 pentominos:1
 people:13
-per:37
 percent:26
 percentage:3
 percentages:1
@@ -6397,7 +6173,6 @@ performances:4
 performed:41
 performing:19
 performs:10
-perhaps:7
 perimeter:2
 period:16
 periodic:6
@@ -6511,7 +6286,6 @@ pk:1
 pl:19
 pl360:1
 place:12
-placed:21
 placement:5
 placements:1
 places:5
@@ -6548,7 +6322,6 @@ plotted:1
 plotter:10
 plotters:1
 plotting:16
-plus:21
 pm:1
 pn:3
 poetry:1
@@ -6619,7 +6392,6 @@ possessing:3
 possession:2
 possibilities:5
 possibility:11
-possible:122
 possibly:11
 post:7
 posteriori:1
@@ -6787,7 +6559,6 @@ probabilistic:7
 probabilities:17
 probability:31
 probable:2
-probably:3
 probe:4
 probes:4
 probing:1
@@ -6910,7 +6681,6 @@ provers:1
 proves:2
 provide:78
 provided:62
-provides:84
 providing:27
 province:1
 proving:26
@@ -6968,7 +6738,6 @@ puts:2
 putting:3
 px:1
 pyramid:1
-q:11
 qn:1
 qr:5
 qsic:1
@@ -7021,12 +6790,10 @@ quikscript:1
 quillian:1
 quintic:2
 quisi:1
-quite:27
 quo:1
 quoted:1
 quotient:9
 quotients:1
-r:23
 r176:1
 r179:1
 r195:1
@@ -7123,7 +6890,6 @@ raster:6
 rate:27
 rates:13
 ratfact:1
-rather:56
 ratings:1
 ratio:17
 rational:20
@@ -7167,7 +6933,6 @@ realizations:2
 realized:11
 realizing:1
 reallocation:1
-really:1
 rearrange:1
 rearranged:2
 rearrangement:2
@@ -7341,7 +7106,6 @@ relations:32
 relationship:24
 relationships:25
 relative:47
-relatively:32
 relativity:1
 relaxarion:1
 relaxation:6
@@ -7501,7 +7265,6 @@ resource:29
 resources:20
 respect:36
 respective:3
-respectively:2
 respects:6
 respond:4
 respondents:1
@@ -7551,10 +7314,7 @@ retrieved:5
 retrieves:1
 retrieving:12
 retrospect:1
-return:4
-returned:3
 returning:1
-returns:3
 reuse:1
 reused:1
 reveal:7
@@ -7591,7 +7351,6 @@ rice:1
 rich:1
 richard:2
 richardson:1
-right:16
 rigid:2
 rigidity:1
 rigor:1
@@ -7665,7 +7424,6 @@ russian:1
 rutishauser:2
 rword:1
 ryckman:1
-s:283
 s1:1
 s13:4
 s14:21
@@ -7687,7 +7445,6 @@ safe:5
 safeguards:1
 safely:3
 safety:2
-said:2
 saint:1
 sakai:1
 sake:1
@@ -7697,7 +7454,6 @@ sale:1
 sales:1
 salesman:2
 salient:1
-same:75
 samelson:1
 sammet:2
 sample:23
@@ -7797,7 +7553,6 @@ searching:35
 seats:1
 sec:2
 secant:2
-second:74
 secondary:13
 seconds:1
 secrecy:1
@@ -7809,15 +7564,11 @@ sections:9
 secure:8
 securely:2
 security:16
-see:5
 seed:1
 seek:4
 seekers:1
 seeks:3
-seem:6
-seemed:1
 seemingly:1
-seems:17
 seen:7
 seful:1
 segment:15
@@ -7839,7 +7590,6 @@ selectively:1
 selectivity:2
 selecton:1
 selects:3
-self:18
 selfcipher:1
 semantic:23
 semantical:2
@@ -7866,7 +7616,6 @@ sensitivities:1
 sensitivity:1
 sensor:1
 sensors:1
-sent:3
 sentence:12
 sentences:19
 separable:3
@@ -7890,7 +7639,6 @@ serial:17
 serially:2
 serials:1
 series:66
-serious:8
 serrev:1
 serve:19
 served:2
@@ -7910,8 +7658,6 @@ setl:1
 sets:54
 setting:3
 settings:1
-seven:3
-several:163
 severe:3
 severely:1
 shaded:1
@@ -7919,7 +7665,6 @@ shades:1
 shading:2
 shadow:3
 shafts:1
-shall:1
 shallow:2
 shanks:2
 shannon:2
@@ -7956,7 +7701,6 @@ shorter:3
 shortest:8
 shorthand:1
 shortly:1
-should:57
 show:39
 showed:6
 showing:12
@@ -8021,7 +7765,6 @@ simultaneity:2
 simultaneous:24
 simultaneously:23
 sin:3
-since:59
 sine:3
 single:73
 singled:1
@@ -8037,7 +7780,6 @@ sites:2
 situ:3
 situation:16
 situations:20
-six:16
 sixteenths:1
 sixth:1
 sizable:1
@@ -8087,7 +7829,6 @@ smoothed:1
 smoothing:5
 snobol:7
 snobol4:3
-so:88
 sobel:1
 social:11
 societal:1
@@ -8113,13 +7854,6 @@ solved:22
 solver:3
 solves:4
 solving:49
-some:279
-someone:2
-something:2
-sometime:1
-sometimes:8
-somewhat:12
-somewhere:1
 soon:2
 sophisticated:16
 sophistication:4
@@ -8162,10 +7896,7 @@ specific:46
 specifically:19
 specification:44
 specifications:26
-specified:48
 specifies:9
-specify:10
-specifying:11
 spectra:4
 spectral:4
 spectroscopy:1
@@ -8286,7 +8017,6 @@ stick:2
 stiefel:1
 stiff:3
 stiffness:1
-still:12
 stimulate:3
 stimulating:1
 stimuli:1
@@ -8358,7 +8088,6 @@ study:84
 studying:4
 sturdy:1
 style:5
-sub:3
 subareas:1
 subarrays:1
 subcalls:1
@@ -8443,7 +8172,6 @@ successive:16
 successively:3
 successor:2
 successors:1
-such:293
 suffered:1
 suffice:6
 suffices:2
@@ -8582,7 +8310,6 @@ systematic:11
 systematically:8
 systems:318
 systemtems:1
-t:35
 tab:1
 table:66
 tableless:2
@@ -8608,7 +8335,6 @@ tain:1
 taining:1
 takahashi:1
 take:28
-taken:28
 takes:16
 taking:7
 tale:1
@@ -8727,16 +8453,9 @@ texture:2
 textured:1
 textures:1
 th:6
-than:192
-that:689
-the:1794
 theft:1
-their:144
-them:60
 thematic:1
 theme:2
-themselves:7
-then:130
 theorem:20
 theorems:15
 theoretic:8
@@ -8745,30 +8464,19 @@ theoretically:7
 theories:5
 theorized:1
 theory:47
-there:87
-thereby:9
-therefore:21
 thermal:2
 thesaurus:1
-these:321
 thesize:1
 thesizes:1
-they:88
 thin:2
 things:15
 think:4
 thinned:1
 thinning:1
-third:20
 thirds:1
 thirteen:1
-this:799
 thomas:3
-thorough:1
-thoroughly:3
-those:83
 thoth:1
-though:17
 thought:6
 thoughts:3
 thousand:1
@@ -8776,16 +8484,12 @@ thousands:2
 thrashing:1
 threaded:6
 threading:1
-three:112
-through:90
-throughout:8
 throughput:7
 throughs:1
 thruput:1
 thrust:1
 thumb:1
 thunks:1
-thus:51
 tied:2
 ties:1
 tight:1
@@ -8810,13 +8514,11 @@ tl:1
 tlc:2
 tmg:1
 tn:1
-to:1399
 tobey:1
 today:11
 toddler:1
 tode:1
 todetect:1
-together:34
 togethers:1
 togram:1
 tolerable:1
@@ -8828,7 +8530,6 @@ tompkins:1
 tone:2
 toned:2
 tones:1
-too:8
 tool:17
 tools:13
 top:18
@@ -8854,8 +8555,6 @@ touching:1
 tour:1
 tournament:1
 tours:1
-toward:32
-towards:6
 trac:2
 trace:11
 traceable:1
@@ -9026,10 +8725,8 @@ tutoring:1
 tv:2
 twelve:5
 twenty:2
-twice:8
 twin:1
 twins:1
-two:281
 twofold:3
 tx:2
 type:78
@@ -9046,7 +8743,6 @@ typing:3
 typists:1
 typographic:1
 typographical:1
-u:14
 ubiquitous:1
 ucla:2
 ultimate:3
@@ -9079,7 +8775,6 @@ unconditionally:1
 unconstraining:1
 unconventional:4
 uncovered:1
-under:96
 underflow:1
 undergoing:1
 undergone:1
@@ -9149,10 +8844,8 @@ universal:3
 universally:1
 universities:15
 university:43
-unix:1
 unknown:7
 unknowns:3
-unless:3
 unlike:7
 unlikely:2
 unlock:1
@@ -9188,20 +8881,17 @@ unsuccessful:2
 unsupervised:1
 untaa:1
 untenable:1
-until:8
 untold:1
 unused:1
 unusual:8
 unwanted:2
 unweighted:1
 unwelcome:1
-up:58
 update:10
 updated:4
 updates:3
 updating:14
 uplifts:1
-upon:52
 upper:15
 ural:2
 urban:4
@@ -9209,7 +8899,6 @@ urgency:2
 urgent:1
 urges:1
 urin:1
-us:5
 usa:11
 usaai:1
 usability:1
@@ -9218,18 +8907,12 @@ usage:31
 usages:1
 usascsocr:1
 usasi:1
-use:350
 usec:1
-used:333
-useful:69
 usefully:2
 usefulness:12
 user:114
 users:63
-uses:73
-using:276
 usual:16
-usually:34
 utah:1
 utilities:1
 utility:23
@@ -9242,7 +8925,6 @@ utilizing:9
 utmost:2
 utterance:1
 utterances:2
-v:15
 vacuum:1
 vague:1
 valid:11
@@ -9252,7 +8934,6 @@ validation:4
 validity:8
 valuable:12
 valuation:1
-value:66
 valued:5
 valuedness:1
 values:74
@@ -9275,7 +8956,6 @@ variations:11
 varied:9
 varies:4
 variety:52
-various:118
 vary:8
 varying:9
 vast:2
@@ -9318,10 +8998,8 @@ vertex:3
 vertical:3
 vertically:1
 vertices:10
-very:93
 veterans:1
 vi:3
-via:22
 viable:1
 vias:1
 vice:1
@@ -9364,9 +9042,7 @@ volume:10
 volumes:3
 voluminous:1
 von:1
-vs:3
 vulnerabilities:1
-w:12
 wage:1
 wait:6
 waiting:4
@@ -9387,7 +9063,6 @@ warnsdorff:1
 warrant:1
 warranty:1
 warshall:1
-was:129
 wasington:1
 waste:1
 wasted:1
@@ -9400,10 +9075,8 @@ waveform:3
 waveforms:2
 wavefunctions:1
 waves:1
-way:73
 ways:27
 wb:1
-we:55
 weak:7
 weakness:1
 weaknesses:3
@@ -9424,28 +9097,11 @@ weizenbaum:1
 welch:2
 welcomed:1
 welfare:1
-well:120
 wengert:3
-were:80
 western:5
 westinghouse:1
 weyl:1
-what:38
-whatever:3
-when:151
-whenever:7
-where:90
-whereas:10
-whereby:5
-wherein:2
-whether:40
-which:781
-while:54
 white:1
-who:20
-whole:10
-whose:45
-why:7
 wide:27
 widely:12
 wider:4
@@ -9455,7 +9111,6 @@ widths:1
 wieghted:1
 wiener:1
 wijngaarden:2
-will:120
 william:1
 williams:1
 win:1
@@ -9475,10 +9130,7 @@ wish:4
 wishes:4
 wishing:3
 wisp:1
-with:782
 withdrawal:1
-within:87
-without:82
 witness:1
 wolfe:1
 wolfson:2
@@ -9500,7 +9152,6 @@ world:13
 worst:11
 worthwhile:1
 worthy:1
-would:39
 wraps:1
 wright:2
 writable:1
@@ -9513,7 +9164,6 @@ written:77
 wrong:2
 wt:1
 wylbur:1
-x:65
 x0:1
 x1:1
 x3:7
@@ -9526,13 +9176,11 @@ xrm:1
 xtran:1
 xx:1
 xy:4
-y:14
 y0:1
 yard:1
 ye:1
 year:7
 years:43
-yet:18
 yi:2
 yield:13
 yielded:3
@@ -9540,13 +9188,10 @@ yielding:3
 yields:17
 ym:1
 york:1
-your:1
 yun:1
 yy:1
-z:24
 z1:1
 z22:1
-zero:12
 zeros:13
 zersol:1
 zh:1
