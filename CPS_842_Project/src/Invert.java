@@ -132,6 +132,7 @@ public class Invert {
 					}
 				}
 			}
+			System.out.println(docNum + ": " + citations.get(docNum));
 		}
 
 		/* If useStopWords = true then remove all stop words from the dictionary */
