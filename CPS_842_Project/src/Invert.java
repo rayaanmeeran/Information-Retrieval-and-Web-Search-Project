@@ -30,6 +30,8 @@ public class Invert {
 	static boolean usePorterStemming;
 	static String stopWordsPath;
 	static String documentsPath;
+	
+	static HashMap<Integer, String> citations;
 
 	public static void main(String[] args) throws Exception {
 		/* Create GUI to run inverting */
@@ -45,6 +47,8 @@ public class Invert {
 
 		dictionary = new HashMap<String, Integer>();
 		posting = new HashMap<String, String>();
+		
+		citations = new HashMap<Integer, String>();
 
 		if (useStopWordsRadioButton.isSelected() == true)
 			useStopWords = true;
@@ -103,12 +107,30 @@ public class Invert {
 			String[] absTerms = abs.split("[\\p{Punct}\\s]+");
 
 			putIntoDictionaryAndPosting(docNum, titleTerms, absTerms, usePorterStemming);
-
-			/* Skips the info for .B .A .N .X Also checks if at the end of cacm file */
-			while (true) {
-				line = br.readLine();
+			
+			
+			while(!line.equals(".X")) {
 				if (line == null || line.substring(0, 2).equals(".I"))
 					break;
+				line = br.readLine();
+			}
+			
+			if (line.equals(".X")) {
+				while (true) {
+					line = br.readLine();
+					if (line == null || line.substring(0, 2).equals(".I"))
+						break;
+					
+					String[] citeLine = line.split("[\\p{Punct}\\s]+");
+					if (Integer.parseInt(citeLine[1]) == 5) {
+						if (citations.containsKey(docNum)) {
+							String temp = citations.get(docNum);
+							citations.put(docNum, temp + ", " + line);
+						}
+						else
+							citations.put(docNum, line);
+					}
+				}
 			}
 		}
 
