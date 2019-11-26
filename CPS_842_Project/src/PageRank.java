@@ -70,12 +70,11 @@ public class PageRank {
 				for (int j = 0; j < 3204; j++) {
 					aMatrix[i][j] = aMatrix[i][j] + ((1- dampingFactor) / 3204);
 				}
-				
 			}
 		}
 		
-		test();
 		
+		test();	
 	}
 	
 	public double getPageRank(int docNum) {
