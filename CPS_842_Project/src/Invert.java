@@ -134,8 +134,11 @@ public class Invert {
 					}
 				}
 			}
-			System.out.println(docNum + ": " + citations.get(docNum));
+			//System.out.println(docNum + ": " + citations.get(docNum));
 		}
+		
+		PageRank pagerank = new PageRank(citations);
+		//pagerank.test();
 
 		/* If useStopWords = true then remove all stop words from the dictionary */
 		if (useStopWords) {
