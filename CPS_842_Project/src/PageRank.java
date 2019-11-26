@@ -7,6 +7,7 @@ public class PageRank {
 	private HashMap<Integer, Double> pageRanks;
 	private static double[][] aMatrix;
 	private static final double dampingFactor = 0.85; 
+	private static double[] vector;
 	
 	// This constructor builds the page rank file from Invert
 	public PageRank(HashMap<Integer, String> citations) {
@@ -73,8 +74,28 @@ public class PageRank {
 			}
 		}
 		
+		vector = new double[3204];
+		vector[0] = 1.0;
+		double[] updateVector = new double[3204];
+		updateVector[0] = 1.0;
+		int convergence = 15;
 		
-		test();	
+		for (int i = 0; i < convergence; i++) {
+			for (int j = 0; j < 3204; j++ ) {
+				double temp = 0;
+				for (int k = 0; k < 3204; k++) {
+					temp = temp + (updateVector[k] * aMatrix[k][j]);
+				}
+				vector[j] = temp;
+			}
+			
+			for (int j = 0; j < 3204; j++) {
+				updateVector[j] = vector[j];
+			}
+		}
+			
+		
+		test2();	
 	}
 	
 	public double getPageRank(int docNum) {
@@ -93,6 +114,13 @@ public class PageRank {
 			System.out.print(i + 1 + ": " );
 			System.out.println(aMatrix[1395][i]);
 		}*/
+		
+	}
+	
+	public static void test2() {
+		for (int i = 0; i < 3204; i++) {
+			System.out.println(i + 1 + ": " + vector[i]);
+		}
 		
 	}
 	
