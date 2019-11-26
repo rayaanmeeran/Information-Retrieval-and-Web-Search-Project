@@ -138,7 +138,6 @@ public class Invert {
 		}
 		
 		PageRank pagerank = new PageRank(citations);
-		//pagerank.test();
 
 		/* If useStopWords = true then remove all stop words from the dictionary */
 		if (useStopWords) {

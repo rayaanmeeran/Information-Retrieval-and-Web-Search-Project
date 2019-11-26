@@ -43,31 +43,45 @@ public class PageRank {
 			}
 		}
 		
+		for (int i = 0; i < 3204; i++) {
+			boolean skip = true;
+			for (int j = 0; j < 3204; j++) {
+				if (aMatrix[i][j] != 0.0) {
+					skip = false;
+					break;
+				}
+			}
+			if (skip) {
+				for (int j = 0; j < 3204; j++)
+					aMatrix[i][j] = 1.0 / 3204.0;
+			}
+			else {
+				
+			}
+		}
+		
+		test();
+		
 	}
 	
 	public double getPageRank(int docNum) {
 		return pageRanks.get(docNum);
 	}
 	
-	public void test() {
-		for (int i = 0; i < 3204; i++) {
+	public static void test() {
+		/*for (int i = 0; i < 3204; i++) {
 			System.out.print(i  + ":  ");
 			for (int j = 0; j < 3204; j++) {
 				System.out.print(aMatrix[i][j] + " ");
 			}
 			System.out.println();
-		}
+		}*/
+		//System.out.print(aMatrix[204][42] + " ");
+		
 	}
 	
 	public static void main(String[] args) {
-		//buildMatrix();
-		/*for (int i = 0; i < 3204; i++) {
-			for (int j = 0; j < 3204; j++) {
-				System.out.print(aMatrix[i][j] + " ");
-			}
-			System.out.println();
-		}*/
-	
+		
 	}
 
 }
