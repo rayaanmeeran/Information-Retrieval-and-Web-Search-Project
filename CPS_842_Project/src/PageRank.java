@@ -6,6 +6,7 @@ public class PageRank {
 	private static HashMap<Integer, String> citations;
 	private HashMap<Integer, Double> pageRanks;
 	private static double[][] aMatrix;
+	private static final double dampingFactor = 0.85; 
 	
 	// This constructor builds the page rank file from Invert
 	public PageRank(HashMap<Integer, String> citations) {
@@ -21,15 +22,14 @@ public class PageRank {
 	public static void buildMatrix() {
 		aMatrix = new double[3204][3204];
 		
-		//for (double[] row: aMatrix) 
-			//Arrays.fill(row, 0.0);
-		
 		for (int i = 1; i <= 3204; i++) {
 			if (citations.containsKey(i)) {
 				String[] citationLine = citations.get(i).split(",");
 				
-				for (String j : citationLine) {
-					String[] citeLine = citations.get(i).split("[\\p{Punct}\\s]+");
+				
+				for (int j = 0; j < citationLine.length; j++) {
+					String[] citeLine = citationLine[j].split("[\\p{Punct}\\s]+");
+					
 					int small = Integer.parseInt(citeLine[0]);
 					int big = Integer.parseInt(citeLine[2]);
 					if (small > big) {
@@ -46,7 +46,7 @@ public class PageRank {
 		for (int i = 0; i < 3204; i++) {
 			boolean skip = true;
 			for (int j = 0; j < 3204; j++) {
-				if (aMatrix[i][j] != 0.0) {
+				if (aMatrix[i][j] == 1.0) {
 					skip = false;
 					break;
 				}
@@ -56,6 +56,20 @@ public class PageRank {
 					aMatrix[i][j] = 1.0 / 3204.0;
 			}
 			else {
+				double count = 0.0;
+				for (int j = 0; j < 3204; j++) {
+					if (aMatrix[i][j] == 1.0)
+						count = count + 1.0;
+				}
+				for (int j = 0; j < 3204; j++) {
+					aMatrix[i][j] = aMatrix[i][j] / count;
+				}
+				for (int j = 0; j < 3204; j++) {
+					aMatrix[i][j] = aMatrix[i][j] * dampingFactor;
+				}
+				for (int j = 0; j < 3204; j++) {
+					aMatrix[i][j] = aMatrix[i][j] + ((1- dampingFactor) / 3204);
+				}
 				
 			}
 		}
@@ -69,14 +83,17 @@ public class PageRank {
 	}
 	
 	public static void test() {
-		/*for (int i = 0; i < 3204; i++) {
+		for (int i = 0; i < 3204; i++) {
 			System.out.print(i  + ":  ");
 			for (int j = 0; j < 3204; j++) {
 				System.out.print(aMatrix[i][j] + " ");
 			}
 			System.out.println();
+		}
+		/*for (int i = 0; i < 3204; i++) {
+			System.out.print(i + 1 + ": " );
+			System.out.println(aMatrix[1395][i]);
 		}*/
-		//System.out.print(aMatrix[204][42] + " ");
 		
 	}
 	

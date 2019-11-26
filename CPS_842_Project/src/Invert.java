@@ -126,7 +126,7 @@ public class Invert {
 						if (!(Integer.parseInt(citeLine[0]) == Integer.parseInt(citeLine[2]))) {
 							if (citations.containsKey(docNum)) {
 								String temp = citations.get(docNum);
-								citations.put(docNum, temp + ", " + line);
+								citations.put(docNum, temp + "," + line);
 							}
 							else
 								citations.put(docNum, line);
