@@ -123,12 +123,14 @@ public class Invert {
 					
 					String[] citeLine = line.split("[\\p{Punct}\\s]+");
 					if (Integer.parseInt(citeLine[1]) == 5) {
-						if (citations.containsKey(docNum)) {
-							String temp = citations.get(docNum);
-							citations.put(docNum, temp + ", " + line);
+						if (!(Integer.parseInt(citeLine[0]) == Integer.parseInt(citeLine[2]))) {
+							if (citations.containsKey(docNum)) {
+								String temp = citations.get(docNum);
+								citations.put(docNum, temp + ", " + line);
+							}
+							else
+								citations.put(docNum, line);
 						}
-						else
-							citations.put(docNum, line);
 					}
 				}
 			}
