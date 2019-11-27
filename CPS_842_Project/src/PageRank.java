@@ -17,9 +17,7 @@ public class PageRank {
 		buildMatrix();
 	}
 	
-	// This constructor is when getting page rank scores for a document during search
 	public PageRank(String filename) throws Exception {
-		filename = "pagerank.txt";
 		readInputFile(filename);
 	}
 	
@@ -100,10 +98,6 @@ public class PageRank {
 	
 	public static double[] getPageRanksVector() {
 		return vector;
-	}
-	
-	public static double getDocPageRank(int docNum) {
-		return vector[docNum-1];
 	}
 	
 	public static void readInputFile(String filename) throws Exception {
