@@ -20,13 +20,17 @@ public class Search {
 
 	private static HashMap<Integer, double[]> documents;
 	private static LinkedHashMap<Integer, Double> similarities;
-	private static LinkedHashMap<Integer, Double> scores;
 
 	private static String stopWordsPath;
 	private static boolean useStopWords;
 	private static boolean useStemming;
 
 	private static int N;
+	
+	private static double w1;
+	private static double w2;
+	
+	private static double[] pagerankVector;
 
 	/**
 	 * Search constructor method
@@ -35,9 +39,10 @@ public class Search {
 	 * @param posting
 	 * @param query
 	 * @param stopWordsPath
+	 * @throws Exception 
 	 */
 	public Search(HashMap<String, Integer> dictionary, HashMap<String, String> posting, String query,
-			String stopWordsPath) {
+			String stopWordsPath, String pagerankPath, Double w1, Double w2) throws Exception {
 		this.dictionary = dictionary;
 		this.posting = posting;
 		this.query = query;
@@ -51,6 +56,12 @@ public class Search {
 		this.similarities = new LinkedHashMap<Integer, Double>();
 
 		this.N = 3204;
+		
+		this.w1 = w1;
+		this.w2 = w2;
+		
+		PageRank pagerank = new PageRank(pagerankPath);
+		pagerankVector = pagerank.getPageRanksVector();
 
 		getDocumentVectors(wordVector);
 		search();
@@ -308,7 +319,9 @@ public class Search {
 		for (Entry<Integer, double[]> entry : documents.entrySet()) {
 			double[] docVector = entry.getValue();
 			double cosine = cosineSimilarity(docVector, vector, dfVector, N);
-			tempSim.put(entry.getKey(), cosine);
+			double pagerankValue = pagerankVector[entry.getKey() - 1];
+			double score = (w1 * cosine) + (w2 * pagerankValue);
+			tempSim.put(entry.getKey(), score);
 		}
 
 		tempSim.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
@@ -322,13 +335,4 @@ public class Search {
 	public static HashMap<Integer, double[]> getDocuments() {
 		return documents;
 	}
-	
-	public static void computeScores() {
-		
-	}
-	
-	public static LinkedHashMap<Integer, Double> getScores() {
-		return scores;
-	}
-
 }

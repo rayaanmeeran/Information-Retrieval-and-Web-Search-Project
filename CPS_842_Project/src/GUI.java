@@ -90,7 +90,7 @@ public class GUI {
 		readInputFile(dictionaryPathTextField.getText());
 		readInputFile(postingsPathTextField.getText());
 
-		Search search = new Search(dictionary, posting, query, stopWordsPathTextField.getText());
+		Search search = new Search(dictionary, posting, query, stopWordsPathTextField.getText(), pagerankPathTextField.getText(), w1, w2);
 		similarities = search.getSimilarities();
 		String documentsPath = documentPathTextField.getText();
 		File documentsFile = new File(documentsPath);
@@ -310,7 +310,7 @@ public class GUI {
 		/* New text area to display results */
 		JTextArea textArea = new JTextArea(42, 52);
 		for (int i = 0; i < docIDsUnsorted.size(); i++) {
-			textArea.append("Rank: " + (i + 1) + ", Doc ID: " + docIDsUnsorted.get(i) + ", Cosine Similarity: "
+			textArea.append("Rank: " + (i + 1) + ", Doc ID: " + docIDsUnsorted.get(i) + ", Score: "
 					+ similarities.get(docIDsUnsorted.get(i)) + "\n" + "Title: " + titleMap.get(docIDsUnsorted.get(i))
 					+ "\n" + "Author: " + authorMap.get(docIDsUnsorted.get(i)) + "\n\n");
 		}
