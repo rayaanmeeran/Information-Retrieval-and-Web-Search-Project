@@ -1,10 +1,13 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashMap;
 
 public class PageRank {
 
 	private static HashMap<Integer, String> citations;
-	private static HashMap<Integer, Double> pageRanks;
 	private static double[][] aMatrix;
 	private static final double dampingFactor = 0.85; 
 	private static double[] vector;
@@ -15,8 +18,9 @@ public class PageRank {
 	}
 	
 	// This constructor is when getting page rank scores for a document during search
-	public PageRank() {
-		// pageRanks = read page ranks file
+	public PageRank(String filename) {
+		filename = "pagerank.txt";
+		readFile(filename);
 	}
 	
 	public static void buildMatrix() {
@@ -99,11 +103,21 @@ public class PageRank {
 	}
 	
 	public static double getDocPageRank(int docNum) {
-		return pageRanks.get(docNum);
+		return vector[docNum-1];
 	}
 	
-	public static void main(String[] args) {
+	public static void readInputFile(String filename) throws Exception {
+		File file = new File(filename);
+		BufferedReader br = new BufferedReader(new FileReader(file));
+		vector = new double[3204];
 		
+		String line = br.readLine();
+		while (!(line == null)) {
+			String[] temp = line.split(":");
+			int i = Integer.parseInt(temp[0]);
+			vector[i-1] = Double.parseDouble(temp[1]);
+			line = br.readLine();
+		}
 	}
 
 }
