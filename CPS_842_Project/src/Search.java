@@ -1,5 +1,5 @@
 /*
- * CPS 842 Assignment 2
+ * CPS 842 Project
  * Rayaan Meeran 500749720 (Section 02)
  * John Gomes 500754885 (Section 01)
  * */
@@ -26,10 +26,10 @@ public class Search {
 	private static boolean useStemming;
 
 	private static int N;
-	
+
 	private static double w1;
 	private static double w2;
-	
+
 	private static double[] pagerankVector;
 
 	/**
@@ -39,7 +39,7 @@ public class Search {
 	 * @param posting
 	 * @param query
 	 * @param stopWordsPath
-	 * @throws Exception 
+	 * @throws Exception
 	 */
 	public Search(HashMap<String, Integer> dictionary, HashMap<String, String> posting, String query,
 			String stopWordsPath, String pagerankPath, Double w1, Double w2) throws Exception {
@@ -56,10 +56,10 @@ public class Search {
 		this.similarities = new LinkedHashMap<Integer, Double>();
 
 		this.N = 3204;
-		
+
 		this.w1 = w1;
 		this.w2 = w2;
-		
+
 		PageRank pagerank = new PageRank(pagerankPath);
 		pagerankVector = pagerank.getPageRanksVector();
 

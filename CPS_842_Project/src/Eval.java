@@ -1,5 +1,5 @@
 /*
- * CPS 842 Assignment 2
+ * CPS 842 Project
  * Rayaan Meeran 500749720 (Section 02)
  * John Gomes 500754885 (Section 01)
  * */
@@ -24,6 +24,12 @@ public class Eval {
 	private static JTextField postingsPathTextField;
 	private static JLabel stopWordsPathLabel;
 	private static JTextField stopWordsPathTextField;
+	private static JLabel pagerankPathLabel;
+	private static JTextField pagerankPathTextField;
+	private static JLabel w1Label;
+	private static JTextField w1TextField;
+	private static JLabel w2Label;
+	private static JTextField w2TextField;
 	private static JButton runButton;
 
 	private static HashMap<String, Integer> dictionary;
@@ -32,10 +38,13 @@ public class Eval {
 	private static HashMap<Integer, String> queries;
 	private static HashMap<Integer, ArrayList<Integer>> qrels;
 
-	private static HashMap<Integer, LinkedHashMap> cosineQueries;
+	private static HashMap<Integer, LinkedHashMap> scoreQueries;
 
 	private static HashMap<Integer, Double> mapValues;
 	private static HashMap<Integer, Double> rPrecisions;
+
+	private static double w1;
+	private static double w2;
 
 	public static void main(String[] args) throws Exception {
 		/* Create GUI */
@@ -143,18 +152,19 @@ public class Eval {
 	 * 
 	 * @throws Exception
 	 */
-	public static void computeCosines() throws Exception {
+	public static void computeScores() throws Exception {
 		dictionary = new HashMap<String, Integer>();
 		posting = new HashMap<String, String>();
-		cosineQueries = new HashMap<Integer, LinkedHashMap>();
+		scoreQueries = new HashMap<Integer, LinkedHashMap>();
 
 		/* Read dictionary and postings files */
 		readInputFile(dictionaryPathTextField.getText());
 		readInputFile(postingsPathTextField.getText());
 
 		for (int i = 1; i <= queries.size(); i++) {
-			Search search = new Search(dictionary, posting, queries.get(i), stopWordsPathTextField.getText());
-			cosineQueries.put(i, search.getSimilarities());
+			Search search = new Search(dictionary, posting, queries.get(i), stopWordsPathTextField.getText(),
+					pagerankPathTextField.getText(), w1, w2);
+			scoreQueries.put(i, search.getSimilarities());
 		}
 	}
 
@@ -165,14 +175,14 @@ public class Eval {
 		mapValues = new HashMap<Integer, Double>();
 		rPrecisions = new HashMap<Integer, Double>();
 
-		for (int i = 1; i <= cosineQueries.size(); i++) {
+		for (int i = 1; i <= scoreQueries.size(); i++) {
 			double mapValue = 0;
 			double rPrecision = 0;
-			LinkedHashMap<Integer, Double> cosines = cosineQueries.get(i);
+			LinkedHashMap<Integer, Double> scores = scoreQueries.get(i);
 			ArrayList<Integer> relevantDocs = qrels.get(i);
 			ArrayList<Integer> retrievedDocs = new ArrayList<Integer>();
 
-			cosines.entrySet().forEach(entry -> {
+			scores.entrySet().forEach(entry -> {
 				retrievedDocs.add(entry.getKey());
 			});
 
@@ -244,30 +254,69 @@ public class Eval {
 		postingsPathTextField = new JTextField("posting.txt");
 		stopWordsPathLabel = new JLabel("Stop Words Path");
 		stopWordsPathTextField = new JTextField("common_words");
+		pagerankPathLabel = new JLabel("PageRank File Path");
+		pagerankPathTextField = new JTextField("pagerank.txt");
+		w1Label = new JLabel("W1");
+		w1TextField = new JTextField("0.5");
+		w2Label = new JLabel("W2");
+		w2TextField = new JTextField("0.5");
 
 		runButton = new JButton("Run");
 
 		/* x axis, y axis, width, height */
-		queryFilePathLabel.setBounds(80, 50, 250, 40);
-		queryFilePathTextField.setBounds(80, 100, 250, 40);
-		qrelsFilePathLabel.setBounds(80, 150, 250, 40);
-		qrelsFilePathTextField.setBounds(80, 200, 250, 40);
-		dictionaryPathLabel.setBounds(80, 250, 250, 40);
-		dictionaryPathTextField.setBounds(80, 300, 250, 40);
-		postingsPathLabel.setBounds(80, 350, 250, 40);
-		postingsPathTextField.setBounds(80, 400, 250, 40);
-		stopWordsPathLabel.setBounds(80, 450, 250, 40);
-		stopWordsPathTextField.setBounds(80, 500, 250, 40);
-		runButton.setBounds(80, 550, 250, 40);
+		queryFilePathLabel.setBounds(80, 40, 250, 30);
+		queryFilePathTextField.setBounds(80, 80, 250, 30);
+		qrelsFilePathLabel.setBounds(80, 120, 250, 30);
+		qrelsFilePathTextField.setBounds(80, 160, 250, 30);
+		dictionaryPathLabel.setBounds(80, 200, 250, 30);
+		dictionaryPathTextField.setBounds(80, 240, 250, 30);
+		postingsPathLabel.setBounds(80, 280, 250, 30);
+		postingsPathTextField.setBounds(80, 320, 250, 30);
+		stopWordsPathLabel.setBounds(80, 360, 250, 30);
+		stopWordsPathTextField.setBounds(80, 400, 250, 30);
+		pagerankPathLabel.setBounds(80, 440, 250, 30);
+		pagerankPathTextField.setBounds(80, 480, 250, 30);
+		w1Label.setBounds(80, 520, 100, 30);
+		w1TextField.setBounds(80, 560, 100, 30);
+		w2Label.setBounds(220, 520, 100, 30);
+		w2TextField.setBounds(220, 560, 100, 30);
+		runButton.setBounds(80, 600, 250, 40);
 
 		/* Event Listeners */
 		runButton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				try {
+				try { // Error checking for correct values of w1 and w2. If error set both to 0.5
+					boolean isDouble = true;
+					try {
+						double value1 = Double.parseDouble(w1TextField.getText());
+						double value2 = Double.parseDouble(w1TextField.getText());
+					} catch (NumberFormatException e1) {
+						isDouble = false;
+					}
+					if (isDouble) {
+						if ((Double.parseDouble(w1TextField.getText()) > 1.0
+								|| Double.parseDouble(w1TextField.getText()) < 0.0)
+								&& (Double.parseDouble(w2TextField.getText()) > 1.0
+										|| Double.parseDouble(w2TextField.getText()) < 0.0)) {
+							w1 = 0.5;
+							w2 = 0.5;
+						} else {
+							w1 = Double.parseDouble(w1TextField.getText());
+							w2 = Double.parseDouble(w2TextField.getText());
+							if (w1 + w2 != 1.0) {
+								w1 = 0.5;
+								w2 = 0.5;
+							}
+						}
+					} else {
+						w1 = 0.5;
+						w2 = 0.5;
+					}
+
 					readQueryFile();
 					readQrelsFile();
-					computeCosines();
+					computeScores();
 					getMapandR();
 					/* New JFrame to show result output after searching */
 					JFrame resultFrame = new JFrame();
@@ -316,9 +365,15 @@ public class Eval {
 		frame.add(postingsPathTextField);
 		frame.add(stopWordsPathLabel);
 		frame.add(stopWordsPathTextField);
+		frame.add(pagerankPathLabel);
+		frame.add(pagerankPathTextField);
+		frame.add(w1Label);
+		frame.add(w1TextField);
+		frame.add(w2Label);
+		frame.add(w2TextField);
 		frame.add(runButton);
 
-		frame.setSize(400, 700);
+		frame.setSize(400, 750);
 		frame.setLayout(null);
 		/* Make the frame visible */
 		frame.setVisible(true);

@@ -1,3 +1,9 @@
+/*
+ * CPS 842 Project
+ * Rayaan Meeran 500749720 (Section 02)
+ * John Gomes 500754885 (Section 01)
+ * */
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -12,15 +18,29 @@ public class PageRank {
 	private static final double dampingFactor = 0.85;
 	private static double[] vector;
 
+	/**
+	 * Constructor that build PageRank File using citations
+	 * 
+	 * @param citations
+	 */
 	public PageRank(HashMap<Integer, String> citations) {
 		this.citations = citations;
 		buildMatrix();
 	}
 
+	/**
+	 * Constructor that gets PageRank values from file
+	 * 
+	 * @param filename
+	 * @throws Exception
+	 */
 	public PageRank(String filename) throws Exception {
 		readInputFile(filename);
 	}
 
+	/**
+	 * Method that builds the adjacency matrix
+	 */
 	public static void buildMatrix() {
 		aMatrix = new double[3204][3204];
 
@@ -94,10 +114,21 @@ public class PageRank {
 		}
 	}
 
+	/**
+	 * Gets page rank vector
+	 * 
+	 * @return
+	 */
 	public static double[] getPageRanksVector() {
 		return vector;
 	}
 
+	/**
+	 * Reads PageRank input file
+	 * 
+	 * @param filename
+	 * @throws Exception
+	 */
 	public static void readInputFile(String filename) throws Exception {
 		File file = new File(filename);
 		BufferedReader br = new BufferedReader(new FileReader(file));

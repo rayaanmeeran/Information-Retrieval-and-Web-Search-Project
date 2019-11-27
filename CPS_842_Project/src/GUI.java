@@ -1,5 +1,5 @@
 /*
- * CPS 842 Assignment 2
+ * CPS 842 Project
  * Rayaan Meeran 500749720 (Section 02)
  * John Gomes 500754885 (Section 01)
  * */
@@ -55,7 +55,7 @@ public class GUI {
 	 */
 	public static void runSearch() throws Exception {
 		boolean isDouble = true;
-		try {
+		try { // Error checking for correct values of w1 and w2. If error set both to 0.5
 			double value1 = Double.parseDouble(w1TextField.getText());
 			double value2 = Double.parseDouble(w1TextField.getText());
 		} catch (NumberFormatException e) {
@@ -80,7 +80,6 @@ public class GUI {
 			w2 = 0.5;
 		}
 
-		System.out.println("weights: " + w1 + " " + w2);
 		String query = queryTextField.getText();
 
 		dictionary = new HashMap<String, Integer>();
@@ -90,7 +89,8 @@ public class GUI {
 		readInputFile(dictionaryPathTextField.getText());
 		readInputFile(postingsPathTextField.getText());
 
-		Search search = new Search(dictionary, posting, query, stopWordsPathTextField.getText(), pagerankPathTextField.getText(), w1, w2);
+		Search search = new Search(dictionary, posting, query, stopWordsPathTextField.getText(),
+				pagerankPathTextField.getText(), w1, w2);
 		similarities = search.getSimilarities();
 		String documentsPath = documentPathTextField.getText();
 		File documentsFile = new File(documentsPath);

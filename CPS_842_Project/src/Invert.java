@@ -1,5 +1,5 @@
 /*
- * CPS 842 Assignment 1
+ * CPS 842 Project
  * Rayaan Meeran 500749720 (Section 02)
  * John Gomes 500754885 (Section 01)
  * */
