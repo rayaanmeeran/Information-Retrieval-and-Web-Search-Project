@@ -20,6 +20,7 @@ public class Search {
 
 	private static HashMap<Integer, double[]> documents;
 	private static LinkedHashMap<Integer, Double> similarities;
+	private static LinkedHashMap<Integer, Double> scores;
 
 	private static String stopWordsPath;
 	private static boolean useStopWords;
@@ -320,6 +321,14 @@ public class Search {
 
 	public static HashMap<Integer, double[]> getDocuments() {
 		return documents;
+	}
+	
+	public static void computeScores() {
+		
+	}
+	
+	public static LinkedHashMap<Integer, Double> getScores() {
+		return scores;
 	}
 
 }
