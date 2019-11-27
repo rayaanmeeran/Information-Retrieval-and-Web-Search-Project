@@ -22,14 +22,22 @@ public class GUI {
 	private static JTextField documentPathTextField;
 	private static JLabel stopWordsPathLabel;
 	private static JTextField stopWordsPathTextField;
+	private static JLabel pagerankPathLabel;
+	private static JTextField pagerankPathTextField;
+	private static JLabel w1Label;
+	private static JTextField w1TextField;
+	private static JLabel w2Label;
+	private static JTextField w2TextField;
 	private static JLabel enterQueryLabel;
 	private static JTextField queryTextField;
 	private static JButton searchButton;
 
 	private static HashMap<String, Integer> dictionary;
 	private static HashMap<String, String> posting;
-
 	private static LinkedHashMap<Integer, Double> similarities;
+
+	private static double w1;
+	private static double w2;
 
 	/**
 	 * Main: create GUI
@@ -46,7 +54,33 @@ public class GUI {
 	 * @throws Exception
 	 */
 	public static void runSearch() throws Exception {
+		boolean isDouble = true;
+		try {
+			double value1 = Double.parseDouble(w1TextField.getText());
+			double value2 = Double.parseDouble(w1TextField.getText());
+		} catch (NumberFormatException e) {
+			isDouble = false;
+		}
+		if (isDouble) {
+			if ((Double.parseDouble(w1TextField.getText()) > 1.0 || Double.parseDouble(w1TextField.getText()) < 0.0)
+					&& (Double.parseDouble(w2TextField.getText()) > 1.0
+							|| Double.parseDouble(w2TextField.getText()) < 0.0)) {
+				w1 = 0.5;
+				w2 = 0.5;
+			} else {
+				w1 = Double.parseDouble(w1TextField.getText());
+				w2 = Double.parseDouble(w2TextField.getText());
+				if (w1 + w2 != 1.0) {
+					w1 = 0.5;
+					w2 = 0.5;
+				}
+			}
+		} else {
+			w1 = 0.5;
+			w2 = 0.5;
+		}
 
+		System.out.println("weights: " + w1 + " " + w2);
 		String query = queryTextField.getText();
 
 		dictionary = new HashMap<String, Integer>();
@@ -104,23 +138,35 @@ public class GUI {
 		documentPathTextField = new JTextField("cacm.all");
 		stopWordsPathLabel = new JLabel("Stop Words Path");
 		stopWordsPathTextField = new JTextField("common_words");
+		pagerankPathLabel = new JLabel("PageRank File Path");
+		pagerankPathTextField = new JTextField("pagerank.txt");
+		w1Label = new JLabel("W1");
+		w1TextField = new JTextField("0.5");
+		w2Label = new JLabel("W2");
+		w2TextField = new JTextField("0.5");
 		enterQueryLabel = new JLabel("Enter query");
 		queryTextField = new JTextField();
 
 		searchButton = new JButton("Search");
 
 		/* x axis, y axis, width, height */
-		dictionaryPathLabel.setBounds(80, 50, 250, 40);
-		dictionaryPathTextField.setBounds(80, 100, 250, 40);
-		postingsPathLabel.setBounds(80, 150, 250, 40);
-		postingsPathTextField.setBounds(80, 200, 250, 40);
-		documentsPathLabel.setBounds(80, 250, 250, 40);
-		documentPathTextField.setBounds(80, 300, 250, 40);
-		stopWordsPathLabel.setBounds(80, 350, 250, 40);
-		stopWordsPathTextField.setBounds(80, 400, 250, 40);
-		enterQueryLabel.setBounds(80, 450, 250, 40);
-		queryTextField.setBounds(80, 500, 250, 40);
-		searchButton.setBounds(80, 550, 250, 40);
+		dictionaryPathLabel.setBounds(80, 40, 250, 30);
+		dictionaryPathTextField.setBounds(80, 80, 250, 30);
+		postingsPathLabel.setBounds(80, 120, 250, 30);
+		postingsPathTextField.setBounds(80, 160, 250, 30);
+		documentsPathLabel.setBounds(80, 200, 250, 30);
+		documentPathTextField.setBounds(80, 240, 250, 30);
+		stopWordsPathLabel.setBounds(80, 280, 250, 30);
+		stopWordsPathTextField.setBounds(80, 320, 250, 30);
+		pagerankPathLabel.setBounds(80, 360, 250, 30);
+		pagerankPathTextField.setBounds(80, 400, 250, 30);
+		w1Label.setBounds(80, 440, 100, 30);
+		w1TextField.setBounds(80, 480, 100, 30);
+		w2Label.setBounds(220, 440, 100, 30);
+		w2TextField.setBounds(220, 480, 100, 30);
+		enterQueryLabel.setBounds(80, 520, 250, 30);
+		queryTextField.setBounds(80, 560, 250, 30);
+		searchButton.setBounds(80, 600, 250, 30);
 
 		/* Event Listeners */
 		searchButton.addActionListener(new ActionListener() {
@@ -144,11 +190,17 @@ public class GUI {
 		frame.add(documentPathTextField);
 		frame.add(stopWordsPathLabel);
 		frame.add(stopWordsPathTextField);
+		frame.add(pagerankPathLabel);
+		frame.add(pagerankPathTextField);
+		frame.add(w1Label);
+		frame.add(w1TextField);
+		frame.add(w2Label);
+		frame.add(w2TextField);
 		frame.add(enterQueryLabel);
 		frame.add(queryTextField);
 		frame.add(searchButton);
 
-		frame.setSize(400, 700);
+		frame.setSize(400, 750);
 		frame.setLayout(null);
 		/* Make the frame visible */
 		frame.setVisible(true);

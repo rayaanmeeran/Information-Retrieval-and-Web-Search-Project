@@ -31,7 +31,7 @@ public class Invert {
 	static boolean usePorterStemming;
 	static String stopWordsPath;
 	static String documentsPath;
-	
+
 	static HashMap<Integer, String> citations;
 
 	public static void main(String[] args) throws Exception {
@@ -48,7 +48,7 @@ public class Invert {
 
 		dictionary = new HashMap<String, Integer>();
 		posting = new HashMap<String, String>();
-		
+
 		citations = new HashMap<Integer, String>();
 
 		if (useStopWordsRadioButton.isSelected() == true)
@@ -108,38 +108,35 @@ public class Invert {
 			String[] absTerms = abs.split("[\\p{Punct}\\s]+");
 
 			putIntoDictionaryAndPosting(docNum, titleTerms, absTerms, usePorterStemming);
-			
-			
-			while(!line.equals(".X")) {
+
+			while (!line.equals(".X")) {
 				if (line == null || line.substring(0, 2).equals(".I"))
 					break;
 				line = br.readLine();
 			}
-			
+
 			if (line.equals(".X")) {
 				while (true) {
 					line = br.readLine();
 					if (line == null || line.substring(0, 2).equals(".I"))
 						break;
-					
+
 					String[] citeLine = line.split("[\\p{Punct}\\s]+");
 					if (Integer.parseInt(citeLine[1]) == 5) {
 						if (!(Integer.parseInt(citeLine[0]) == Integer.parseInt(citeLine[2]))) {
 							if (citations.containsKey(docNum)) {
 								String temp = citations.get(docNum);
 								citations.put(docNum, temp + "," + line);
-							}
-							else
+							} else
 								citations.put(docNum, line);
 						}
 					}
 				}
 			}
 		}
-		
+
 		PageRank pageRankObj = new PageRank(citations);
 		pageRanks = pageRankObj.getPageRanksVector();
-		
 
 		/* If useStopWords = true then remove all stop words from the dictionary */
 		if (useStopWords) {
@@ -176,16 +173,16 @@ public class Invert {
 			writer.write(postingLine);
 		}
 		writer.close();
-		
+
 		/* Writing the page ranks to a file called pagerank.txt */
 		File writePagerankFile = new File("pagerank.txt");
 		writer = new BufferedWriter(new FileWriter(writePagerankFile));
 
 		for (int i = 0; i < 3204; i++) {
-			String pagerankLine = (i+1) + ":" + pageRanks[i] + "\n";
+			String pagerankLine = (i + 1) + ":" + pageRanks[i] + "\n";
 			writer.write(pagerankLine);
 		}
-		
+
 		writer.close();
 
 		/* Check if the path is correct */
