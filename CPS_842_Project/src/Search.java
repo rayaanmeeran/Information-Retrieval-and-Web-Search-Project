@@ -244,6 +244,12 @@ public class Search {
 		return vector;
 	}
 
+	/**
+	 * Gets DF vector
+	 * 
+	 * @param wordVector
+	 * @return
+	 */
 	public static double[] getDFvector(String[] wordVector) {
 		double[] df = new double[wordVector.length];
 
@@ -283,6 +289,12 @@ public class Search {
 		}
 	}
 
+	/**
+	 * Read stopWords file
+	 * 
+	 * @param stopWordsFile
+	 * @return
+	 */
 	public static ArrayList<String> readStopWords(File stopWordsFile) {
 		Scanner stopWordsScan;
 		try {
@@ -299,6 +311,9 @@ public class Search {
 		return null;
 	}
 
+	/**
+	 * Check to use stop words
+	 */
 	public static void useStopWords() {
 		if (dictionary.containsKey("the") || dictionary.containsKey("and"))
 			useStopWords = false;
@@ -306,6 +321,9 @@ public class Search {
 			useStopWords = true;
 	}
 
+	/**
+	 * Check to use Stemming
+	 */
 	public static void useStemming() {
 		if (dictionary.containsKey("somewher") || dictionary.containsKey("categor"))
 			useStemming = true;
@@ -313,6 +331,9 @@ public class Search {
 			useStemming = false;
 	}
 
+	/**
+	 * Search for query and get scores
+	 */
 	public static void search() {
 
 		HashMap<Integer, Double> tempSim = new HashMap<Integer, Double>();
@@ -328,10 +349,20 @@ public class Search {
 				.forEachOrdered(x -> similarities.put(x.getKey(), x.getValue()));
 	}
 
+	/**
+	 * Get Scores
+	 * 
+	 * @return
+	 */
 	public static LinkedHashMap<Integer, Double> getSimilarities() {
 		return similarities;
 	}
 
+	/**
+	 * Get documents
+	 * 
+	 * @return
+	 */
 	public static HashMap<Integer, double[]> getDocuments() {
 		return documents;
 	}
