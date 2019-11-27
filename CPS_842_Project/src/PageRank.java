@@ -4,12 +4,11 @@ import java.util.HashMap;
 public class PageRank {
 
 	private static HashMap<Integer, String> citations;
-	private HashMap<Integer, Double> pageRanks;
+	private static HashMap<Integer, Double> pageRanks;
 	private static double[][] aMatrix;
 	private static final double dampingFactor = 0.85; 
 	private static double[] vector;
 	
-	// This constructor builds the page rank file from Invert
 	public PageRank(HashMap<Integer, String> citations) {
 		this.citations = citations;
 		buildMatrix();
@@ -92,36 +91,15 @@ public class PageRank {
 			for (int j = 0; j < 3204; j++) {
 				updateVector[j] = vector[j];
 			}
-		}
-			
-		
-		test2();	
+		}	
 	}
 	
-	public double getPageRank(int docNum) {
+	public static double[] getPageRanksVector() {
+		return vector;
+	}
+	
+	public static double getDocPageRank(int docNum) {
 		return pageRanks.get(docNum);
-	}
-	
-	public static void test() {
-		for (int i = 0; i < 3204; i++) {
-			System.out.print(i  + ":  ");
-			for (int j = 0; j < 3204; j++) {
-				System.out.print(aMatrix[i][j] + " ");
-			}
-			System.out.println();
-		}
-		/*for (int i = 0; i < 3204; i++) {
-			System.out.print(i + 1 + ": " );
-			System.out.println(aMatrix[1395][i]);
-		}*/
-		
-	}
-	
-	public static void test2() {
-		for (int i = 0; i < 3204; i++) {
-			System.out.println(i + 1 + ": " + vector[i]);
-		}
-		
 	}
 	
 	public static void main(String[] args) {

@@ -26,6 +26,7 @@ public class Invert {
 
 	static HashMap<String, Integer> dictionary;
 	static HashMap<String, String> posting;
+	static double[] pageRanks;
 	static boolean useStopWords;
 	static boolean usePorterStemming;
 	static String stopWordsPath;
@@ -134,10 +135,11 @@ public class Invert {
 					}
 				}
 			}
-			//System.out.println(docNum + ": " + citations.get(docNum));
 		}
 		
-		PageRank pagerank = new PageRank(citations);
+		PageRank pageRankObj = new PageRank(citations);
+		pageRanks = pageRankObj.getPageRanksVector();
+		
 
 		/* If useStopWords = true then remove all stop words from the dictionary */
 		if (useStopWords) {
@@ -174,10 +176,22 @@ public class Invert {
 			writer.write(postingLine);
 		}
 		writer.close();
+		
+		/* Writing the page ranks to a file called pagerank.txt */
+		File writePagerankFile = new File("pagerank.txt");
+		writer = new BufferedWriter(new FileWriter(writePagerankFile));
+
+		for (int i = 0; i < 3204; i++) {
+			String pagerankLine = (i+1) + ":" + pageRanks[i] + "\n";
+			writer.write(pagerankLine);
+		}
+		
+		writer.close();
 
 		/* Check if the path is correct */
-		System.out.printf("\nDictionary file is located at %s%n", writeDictionaryFile.getAbsolutePath());
-		System.out.printf("\nPosting file is located at %s%n", writePostingFile.getAbsolutePath());
+		System.out.printf("Dictionary file is located at %s%n", writeDictionaryFile.getAbsolutePath());
+		System.out.printf("Posting file is located at %s%n", writePostingFile.getAbsolutePath());
+		System.out.printf("Page rank file is located at %s%n", writePagerankFile.getAbsolutePath());
 	}
 
 	/**
